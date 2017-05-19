@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{13ab6f01-fb49-4e92-8d49-d46b56f42506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{0e35c471-1475-406d-b0bd-58eb7bd277f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{2c6459c3-9d59-46a3-b7a8-fc70e210585f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\oracleCapture.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="common\xlog_ex.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="main\signal_proc.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\dict_opt.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lmr_opt.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\tx_opt.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\parse_sql.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\type_transfer.c">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="common\str_utils.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Lh_stats.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Lhash.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Mem.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MemDbg.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\commfunc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="makefile" />
+    <ClInclude Include="common\basetype.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\errcode.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\xlog_ex.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="main\signal_proc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dict_opt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\testcap.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lmr_opt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tx_opt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\parse_sql.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\str_utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\type_transfer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Lhash.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Mem.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\MemDbg.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\commfunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

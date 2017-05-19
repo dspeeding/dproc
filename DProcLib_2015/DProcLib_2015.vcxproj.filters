@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\log">
+      <UniqueIdentifier>{7dcc12bc-601e-4b98-a183-0f959826a666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\string">
+      <UniqueIdentifier>{86f16a58-ca16-41d7-8267-764f6384d9e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DS">
+      <UniqueIdentifier>{9726eff4-b732-400d-b957-6126e8b08b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mem">
+      <UniqueIdentifier>{bb8f7685-d10d-43ba-8f92-96999e402de3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mem">
+      <UniqueIdentifier>{6954d897-bb7c-4f88-8692-d6874572fb10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ds">
+      <UniqueIdentifier>{de86fbb2-7091-4ff3-89fc-b6aa125afa53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\odbc">
+      <UniqueIdentifier>{534ec60f-be7f-4d7c-929c-73361ea68157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\odbc">
+      <UniqueIdentifier>{0a922e8f-abf9-4009-9e84-4f3090ee01f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\comm\include\basetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\commfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\errcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\sys_proc_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\str_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\str_base64opt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\mem\Mem.h">
+      <Filter>Header Files\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\mem\MemDbg.h">
+      <Filter>Header Files\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\ds\link_list.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\ds\sq_list.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\ds\array_stack.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\ds\array_queue.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\xodbc\xodbc.h">
+      <Filter>Header Files\odbc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\include\ds\Link_Hash.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="commfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sys_proc_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log.c">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string\str_utils.c">
+      <Filter>Source Files\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string\str_base64opt.c">
+      <Filter>Source Files\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\sq_list.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\link_list.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem\Mem.c">
+      <Filter>Source Files\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem\MemDbg.c">
+      <Filter>Source Files\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\array_stack.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\array_queue.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xodbc\xodbc.c">
+      <Filter>Source Files\odbc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\Link_Hash.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
