@@ -48,7 +48,7 @@ int UTF8ToGBK(char* utf8str, char* gbkstr, int gbkstr_maxlen);
 *************************************************************************/
 int reg_proc_comm(char* content, char* pattern, int region_num, char* buf, int buf_maxlen);
 
-int get_html_data(char* url, char* buffer, int timeout, char* cookie, char* ipport);
+int get_html_data(char* url, char* postdata, char* buffer, int timeout, char* cookie, char* ipport);
 
 int download_file(int thread_num, char* url, char* path, char* filename, int timeout, SHOW_DOWNLOAD_PROCESS_PROC proc);
 

@@ -9,8 +9,8 @@
 *:      Introduction: link list
 *:
 *:		PS: data no not support deep copy
-*:		need to realize the function of Visit is necessary
-*:		need to realize the function of Compare is necessary
+*:		need to realize the function of Visit if necessary
+*:		need to realize the function of Compare if necessary
 *:
 *:*********************************************************************/
 #pragma once

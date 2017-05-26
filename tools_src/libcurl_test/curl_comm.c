@@ -211,7 +211,7 @@ int reg_proc_comm(char* content, char* pattern, int region_num, char* buf, int b
 	return 0;
 }
 
-int get_html_data(char* url, char* buffer, int timeout, char* cookie, char* ipport)
+int get_html_data(char* url, char* postdata, char* buffer, int timeout, char* cookie, char* ipport)
 {
 	CURL		*curl;
 	CURLcode	res;
@@ -230,9 +230,18 @@ int get_html_data(char* url, char* buffer, int timeout, char* cookie, char* ippo
 		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);//设定为不验证证书和HOST
 		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, FALSE);
 	}
+	if (postdata)
+	{
+		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, postdata);
+		curl_easy_setopt(curl, CURLOPT_POST, 1); // post请求
+	}
+	else
+	{
+		curl_easy_setopt(curl, CURLOPT_POST, 0); // 非post请求
+	}
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curl_easy_setopt(curl, CURLOPT_TIMEOUT, timeout); // 设置超时时间为3秒
-	curl_easy_setopt(curl, CURLOPT_POST, 0); // 非post请求
+	
 	if (ipport != NULL)
 	{
 		curl_easy_setopt(curl, CURLOPT_PROXY, ipport);
@@ -251,14 +260,14 @@ int get_html_data(char* url, char* buffer, int timeout, char* cookie, char* ippo
 	res = curl_easy_perform(curl);
 	if (res != CURLE_OK)
 	{
-		//LOG_E("curl_easy_perform() failed: %s", curl_easy_strerror(res));
+		LOG_E("curl_easy_perform() failed: %s", curl_easy_strerror(res));
 		curl_easy_cleanup(curl);
 		return 1;
 	}
 
 	curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &code); // 获取http status，如果为200则输出网页内容
 	if (code != 200) {
-//		LOG_E("get code is not 200[%d]", code);
+		LOG_E("get code is not 200[%d]", code);
 		curl_easy_cleanup(curl);
 		return 1;
 	}
