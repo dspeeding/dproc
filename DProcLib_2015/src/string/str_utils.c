@@ -165,7 +165,7 @@ char* STR_Trim(INANDOUT char* szSrc, IN int nFlag)
 	{
 		while (*p != '\0')
 		{
-			if (*p != ' ' && *p != '\n' && *p != '\r')
+			if (*p != ' ' && *p != '\n' && *p != '\r' || *p == '\t')
 			{
 				*q++ = *p++;
 			}

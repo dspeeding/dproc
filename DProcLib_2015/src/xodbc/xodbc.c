@@ -125,7 +125,7 @@ int odbc_connect(OUT ODBC_CTX* ctx, IN const char* conn_str, IN int timeout, IN 
 	}
 
 	ret = CHECK_ERR_DBC(SQLDriverConnectA(ctx->hdbc, NULL, (SQLCHAR *)conn_str, SQL_NTS, (SQLCHAR *)conn_out, sizeof(conn_out), NULL, SQL_DRIVER_NOPROMPT));
-	if (ret != SQL_SUCCESS)
+	if ((ret != SQL_SUCCESS) && (ret != SQL_SUCCESS_WITH_INFO))
 	{
 		LOG_E("SQLDriverConnectA error");
 		SQLFreeHandle(SQL_HANDLE_DBC, ctx->hdbc);
@@ -309,13 +309,13 @@ int odbc_fetch(IN ODBC_STMT* stmt)
 	CHECK_POINTER(stmt, ERR_COMM_NULL_POINTER);
 
 	ret = CHECK_ERR_STMT(SQLFetch(stmt->hstmt));
-	if (ret != SQL_SUCCESS)
+	if ((ret != SQL_SUCCESS) && (ret != SQL_SUCCESS_WITH_INFO))
 	{
 		if (ret == SQL_NO_DATA)
 		{
 			return ERR_XODBC_NO_DATA;
 		}
-		LOG_E("SQLFetch error");
+		LOG_E("SQLFetch error,ret=[%#x]", ret);
 		return ERR_XODBC_FETCH;
 	}
 

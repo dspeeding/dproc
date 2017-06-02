@@ -22,7 +22,7 @@ int test_pic_sub(char* url, char* next_url)
 	memset(g_buff, 0, MAX_BUFFER_SIZE);
 	memset(g_buff_gbk, 0, MAX_BUFFER_SIZE);
 
-	ret = get_html_data(url, g_buff, 5, NULL, NULL);
+	ret = get_html_data(url, NULL, g_buff, 5, NULL, NULL);
 	if (ret != 0)
 	{
 		LOG_E("get_html_data error");

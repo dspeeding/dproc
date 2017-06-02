@@ -45,7 +45,7 @@ int Test_Zhihu(char* name)
 	memset(g_buff, 0, MAX_BUFFER_SIZE);
 	memset(g_buff_gbk, 0, MAX_BUFFER_SIZE);
 
-	ret = get_html_data(urltext, g_buff, 5, cookie, NULL);
+	ret = get_html_data(urltext, NULL, g_buff, 5, cookie, NULL);
 	if (ret != 0)
 	{
 		LOG_E("get_html_data error");

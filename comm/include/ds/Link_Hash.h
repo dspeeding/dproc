@@ -103,7 +103,7 @@ int LH_Insert(IN LINK_HASH* pHash, IN void* data, OUT void** old_data);
 @Modify  :
 @Remark  :	返回成功后，需要对old_data做进一步处理，比如释放old_data的内存之类
 *************************************************************************/
-int LH_Delete(IN LINK_HASH* pHash, IN const void* data, OUT void* old_data);
+int LH_Delete(IN LINK_HASH* pHash, IN const void* data, OUT void** old_data);
 
 /*************************************************************************
 @Purpose :	检索数据

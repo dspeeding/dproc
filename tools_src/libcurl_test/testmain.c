@@ -28,7 +28,7 @@ int Test_qiushibaike(int page)
 	memset(g_buff, 0, MAX_BUFFER_SIZE);
 	memset(g_buff_gbk, 0, MAX_BUFFER_SIZE);
 
-	ret = get_html_data(urltext, g_buff, 5, NULL, NULL);
+	ret = get_html_data(urltext, NULL, g_buff, 5, NULL, NULL);
 	if (ret != 0)
 	{
 		LOG_E("get_html_data error");
@@ -129,7 +129,7 @@ int Test_Lianjia(int page, ODBC_CTX* ctx)
 	memset(g_buff, 0, MAX_BUFFER_SIZE);
 	memset(g_buff_gbk, 0, MAX_BUFFER_SIZE);
 
-	ret = get_html_data(urltext, g_buff, 5, NULL, NULL);
+	ret = get_html_data(urltext, NULL, g_buff, 5, NULL, NULL);
 	if (ret != 0)
 	{
 		LOG_E("get_html_data error");
@@ -245,7 +245,7 @@ int Test_DouBanMovie(int page)
 	memset(g_buff, 0, MAX_BUFFER_SIZE);
 	memset(g_buff_gbk, 0, MAX_BUFFER_SIZE);
 
-	ret = get_html_data(urltext, g_buff, 5, NULL, NULL);
+	ret = get_html_data(urltext, NULL, g_buff, 5, NULL, NULL);
 	if (ret != 0)
 	{
 		LOG_E("get_html_data error");
