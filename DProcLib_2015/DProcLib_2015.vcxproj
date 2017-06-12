@@ -154,6 +154,7 @@
     <ClInclude Include="..\comm\include\commfunc.h" />
     <ClInclude Include="..\comm\include\ds\array_queue.h" />
     <ClInclude Include="..\comm\include\ds\array_stack.h" />
+    <ClInclude Include="..\comm\include\ds\AVL_Tree.h" />
     <ClInclude Include="..\comm\include\ds\Link_Hash.h" />
     <ClInclude Include="..\comm\include\ds\link_list.h" />
     <ClInclude Include="..\comm\include\ds\sq_list.h" />
@@ -170,6 +171,7 @@
     <ClCompile Include="commfunc.c" />
     <ClCompile Include="src\ds\array_queue.c" />
     <ClCompile Include="src\ds\array_stack.c" />
+    <ClCompile Include="src\ds\AVL_Tree.c" />
     <ClCompile Include="src\ds\Link_Hash.c" />
     <ClCompile Include="src\ds\link_list.c" />
     <ClCompile Include="src\ds\sq_list.c" />

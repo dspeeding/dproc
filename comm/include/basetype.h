@@ -58,6 +58,7 @@ typedef int(*ComparePTR)(void*, void*);
 #include "ds/link_list.h"
 #include "ds/array_queue.h"
 #include "ds/Link_Hash.h"
+#include "ds/AVL_Tree.h"
 #include "mem/Mem.h"
 
 

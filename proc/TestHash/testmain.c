@@ -1,5 +1,4 @@
 #include "basetype.h"
-#include "LinkHash.h"
 
 #pragma comment(lib, "dproclib.lib")
 
@@ -37,7 +36,9 @@ void TestHash()
 			Mem_Free(old_data);
 		}
 		system("cls");
+		
 		LH_Node_Stats(pHash, stdout);
+		Sleep(500);
 		
 	}
 	

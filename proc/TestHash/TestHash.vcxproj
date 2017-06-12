@@ -144,11 +144,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkHash.c" />
     <ClCompile Include="testmain.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LinkHash.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

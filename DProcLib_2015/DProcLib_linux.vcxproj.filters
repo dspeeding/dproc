@@ -79,6 +79,9 @@
     <ClInclude Include="..\comm\include\ds\Link_Hash.h">
       <Filter>include\ds</Filter>
     </ClInclude>
+    <ClInclude Include="..\comm\include\ds\AVL_Tree.h">
+      <Filter>include\ds</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ds\sq_list.c">
@@ -115,6 +118,9 @@
       <Filter>src\odbc</Filter>
     </ClCompile>
     <ClCompile Include="src\ds\Link_Hash.c">
+      <Filter>src\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\AVL_Tree.c">
       <Filter>src\DS</Filter>
     </ClCompile>
   </ItemGroup>

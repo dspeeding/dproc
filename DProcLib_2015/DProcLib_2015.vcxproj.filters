@@ -87,6 +87,9 @@
     <ClInclude Include="..\comm\include\ds\Link_Hash.h">
       <Filter>Header Files\ds</Filter>
     </ClInclude>
+    <ClInclude Include="..\comm\include\ds\AVL_Tree.h">
+      <Filter>Header Files\ds</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="commfunc.c">
@@ -126,6 +129,9 @@
       <Filter>Source Files\odbc</Filter>
     </ClCompile>
     <ClCompile Include="src\ds\Link_Hash.c">
+      <Filter>Source Files\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ds\AVL_Tree.c">
       <Filter>Source Files\DS</Filter>
     </ClCompile>
   </ItemGroup>
